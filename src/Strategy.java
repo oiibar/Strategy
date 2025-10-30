@@ -1,3 +1,3 @@
 interface Strategy {
-    void buildRoute(String startPoint, String endPoint);
+    String buildRoute(String startPoint, String endPoint);
 }

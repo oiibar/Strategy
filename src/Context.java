@@ -1,11 +1,11 @@
-class NavigationApp {
+class Context {
     private Strategy routeStrategy;
 
     public void setRouteStrategy(Strategy routeStrategy) {
         this.routeStrategy = routeStrategy;
     }
 
-    public void navigate(String start, String end) {
-        routeStrategy.buildRoute(start, end);
+    public String navigate(String start, String end) {
+        return routeStrategy.buildRoute(start, end);
     }
 }

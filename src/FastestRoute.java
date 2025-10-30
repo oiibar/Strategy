@@ -1,7 +1,6 @@
 class FastestRoute implements Strategy {
     @Override
-    public void buildRoute(String startPoint, String endPoint) {
-        System.out.println("Calculating the fastest route from "
-                + startPoint + " to " + endPoint + ".");
+    public String buildRoute(String startPoint, String endPoint) {
+        return "Calculating the fastest route from " + startPoint + " to " + endPoint + ".";
     }
 }

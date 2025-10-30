@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        NavigationApp app = new NavigationApp();
+        Context app = new Context();
 
         app.setRouteStrategy(new ShortestRoute());
-        app.navigate("Home", "University");
+        System.out.println(app.navigate("Home", "University"));
 
         app.setRouteStrategy(new FastestRoute());
-        app.navigate("Home", "Airport");
+        System.out.println(app.navigate("Home", "Airport"));
 
         app.setRouteStrategy(new ScenicRoute());
-        app.navigate("Home", "Mall");
+        System.out.println(app.navigate("Home", "Mall"));
     }
 }
